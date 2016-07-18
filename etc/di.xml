@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config>
+    <type name="Magento\Framework\View\Element\AbstractBlock">
+        <plugin name="AbstractBlockPlugin" type="Razvan\DevTools\Plugin\AbstractBlockPlugin" />
+    </type>
+</config>
