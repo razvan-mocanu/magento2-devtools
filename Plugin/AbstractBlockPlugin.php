@@ -1,8 +1,17 @@
 <?php
+
 namespace Razvan\DevTools\Plugin;
 
+/**
+ * Class AbstractBlockPlugin
+ * @package Razvan\DevTools\Plugin
+ */
 class AbstractBlockPlugin
 {
+
+    /**
+     * AbstractBlockPlugin constructor.
+     */
     public function __construct()
     {
     }
@@ -12,7 +21,7 @@ class AbstractBlockPlugin
      * @param $result
      * @return string
      */
-    public function afterToHtml($block, $result)
+    public function afterToHtml(\Magento\Framework\View\Element\AbstractBlock $block, $result)
     {
         $blockName = $block->getNameInLayout();
         $blockTemplate = $block->getTemplateFile();

@@ -2,15 +2,19 @@
 
 namespace Razvan\DevTools\Helper;
 
+/**
+ * Class Data
+ * @package Razvan\DevTools\Helper
+ */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
-
-    /**
-     * Dev allow ips config path
-     */
+    
     const XML_PATH_DEV_DEVTOOLS_ENABLED = 'dev/Razvan_DevTools/enabled';
 
-
+    /**
+     * @param null $storeId
+     * @return bool
+     */
     public function isEnabled($storeId = null)
     {
         return $this->scopeConfig->getValue(
